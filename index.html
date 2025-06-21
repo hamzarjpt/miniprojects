@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    font-family: sans-serif;
+   
+}
+#container{
+   height: 100vh;
+    display: flex;
+    gap: 40px;
+    justify-content: space-evenly ;
+    align-items: center;
+    background: linear-gradient(to right, #041308, #0b3317);
+    color: white
+}
+#left-side{
+    font-size: 1.2rem;
+    flex-basis: 38%;
+    text-align: center;
+    padding: 20px;
+}
+#left-side h2{
+    padding-bottom: 20px;
+
+}
+#right-side{
+    flex-basis: 37%;
+    display:grid;
+    gap: 5px;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 100px;
+    color: white;
+    /* grid-template-rows: repeat(3,1fr); */
+}
+.div{
+    background-color: #222;
+    mix-blend-mode:unset ;
+    background-position: top;
+    transition: all 2s ease-in-out;
+}
+.div:hover{
+    mix-blend-mode: normal;
+    background-position: right;
+}
+#box1{
+    grid-row: span 2;
+}
+#box2 ,#box7{
+    grid-column: span 2;
+    
+}
+#box4{
+    grid-row: span 2;
+}
+#box5{
+    grid-column: span 2;
+    
+}
+
+    </style>
+</head>
+<body>
+  <div id="container">
+
+<div id="left-side">
+    <h2>My Portfolio</h2>
+    <p>When woeds become inclear, I shall focus with photographs. When images become inadequate. I shall be content with silence.</p>
+</div>
+<div id="right-side">
+<div class="div" id="box1" style="background-image: url('lake.avif');">lake</div>
+<div class="div" id="box2" style="background-image: url('mountain.avif');" >mountain</div>
+<div class="div" id="box3" style="background-image: url('ocean.avif');">ocean</div>
+<div class="div" id="box4" style="background-image: url('trees.avif');">trees</div>
+<div class="div" id="box5" style="background-image: url('wildlife.avif');">wildlife</div>
+<div class="div" id="box6" style="background-image: url('pinkmountain.avif');">pinkmountain</div>
+<div class="div" id="box7" style="background-image: url('waterfall.avif');">waterfall</div>
+
+  </div>
+
+
+
+</body>
+</html>
